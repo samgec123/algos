@@ -43,7 +43,7 @@ class Result {
             return list;
         } else {
             //if a prefix matches with one of passwords
-            PriorityQueue<String> passwordQueue = new PriorityQueue<>(3 * passwords.size(), new Comparator<String>() {
+            PriorityQueue<String> passwordQueue = new PriorityQueue<>(passwords.size(), new Comparator<String>() {
                 @Override
                 public int compare(String o1, String o2) {
                     if (o1.length() > o2.length()) {
@@ -80,7 +80,7 @@ class Result {
 
 public class Solution {
     public static void main(String[] args) throws IOException {
-        List<String> passwords = List.of("a" ,"b" ,"ab");
+        List<String> passwords = List.of("a", "b", "ab");
         String result = Result.passwordCracker(passwords, "abbababbaabababbababaabbbbaabababbaabaaaabaabbbabababbbaababbabababbabbbbbababaabaabaabbabbabaababbababbabbbbaababaaabbababaaababababbababbaabbabaaabbabaabbababaaaaaaabbaaababababaababaabbabaaabbababbababaaababaababaababbababaabbaabaabaababaabbabbabaabbaabaabbababaacbbaaabbababbaaababaaaabbabababbbbababababbaabbaaababababbbabbaabbaabababaabaaababaaaababbbaabababababbabababbaaababbaabaabaababababbaaabababaabbabaababbbababbaabbbababaababababaababbbbabaaabababaabbabaabaabbbaabababaababbaaabbabaababbbabaabbaababaaabbababbabaaabababababaaababbabababbababaaabababababbabbabaabaabbabaabaabaabababbbabbabababaaabbbaabaababbbaaaabaabababaaaabbababbaabababbbababababababaababaaabbbabababbaaaababbbabbaababababababababababaabbaaabbbabbababaaaabaaabbabaaaababbaabaaaabbababbabbabbbabbabbababaabababbaabbababbabbabbaabaabbabbbabababaababbaababbaababaabbabbbbbababbabbabaabaababbabbaaababbbabababbababaaabaabbababababbababbababaababaababababbbabaaaababababaaabbabbbabababbabbbabababbaabbabbabbabababaaabbabababababbaabababababaabaababbbabaababbbabaabbbbababbbabaabbabaabaabbbabbbbababbabbabaaabaababbbabababaaabbaabaaabbbbaaabbbabaaabbbbbbabababbaaaabbabababaabbabbbaaabbbababbaababbbababaaababbababbabababaaabaabaabaaaababbbabaabbabaaabbbabbabababababaaaabbaabababbbabababbbaabbaababbaaababbaabaaaabbabababaaabaababbbaabaabaabaaababaababaababababbbbabbbbababbaababaaabaababababbbabbabababababaaabababaabbbabbbabababaabbabababbbaabababbaaababbaabbbabababbabbababbababaababaabaaaabbaababababbababbbababbbbabbbaababaaaababbabbabaabbbabbaabababababbbabababbbbabaabababbbabaaaababababbbabaaabbaabababbbbaabaababbababaaababbabaabaabbabababababababbababababaababaaababaabababbababababaabbabaabaaabbbabbabaabaaabababaabaabababbbbbbbbababababaabbabbabbaababbaabbababaabbbabababaabaabbaaabbabbaaabbbbabaabbabbbbabbabaabbaabaaabbbababbbbbbababaababbaabababbababababbaaabaabbabaaaaaaabbababaabaabbababbabbabbaaabbabbabaabaaababaabbbaabbabbbabababaabaaaabbbabaaaababaabaababaaababbaabaabbbaababababbbbaaabababbbaaabaaaba");
         System.out.println(result);
     }
